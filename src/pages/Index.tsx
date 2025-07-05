@@ -2,12 +2,14 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Check, CircleDollarSign, Users, FileText } from "lucide-react";
+import Navigation from "@/components/Navigation";
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
+      <Navigation />
       {/* Hero Section */}
-      <section className="relative py-20 px-4 sm:px-6 lg:px-8">
+      <section id="hero" className="relative py-20 px-4 sm:px-6 lg:px-8 pt-32">
         <div className="max-w-7xl mx-auto text-center">
           <div className="neo-card p-12 mb-12">
             <Badge className="mb-6 neo-raised px-4 py-2 bg-primary/10 text-primary font-semibold">
@@ -74,7 +76,7 @@ const Index = () => {
       </section>
 
       {/* Solution Section */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8">
+      <section id="solution" className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
@@ -106,7 +108,7 @@ const Index = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold text-lg mb-2">Submit Unlimited Requests</h4>
-                    <p className="text-muted-foreground">Add bug reports, feature requests, and CI/CD needs to your dedicated project board. No limits.</p>
+                    <p className="text-muted-foreground">Add unlimited bug reports, feature requests, and CI/CD needs to your dedicated project board. We handle each request one at a time to ensure quality and focus.</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
@@ -114,8 +116,8 @@ const Index = () => {
                     3
                   </div>
                   <div>
-                    <h4 className="font-semibold text-lg mb-2">Get Results in Days</h4>
-                    <p className="text-muted-foreground">We fix bugs, write tests, and deploy improvements within 2-5 days. All with proper testing and CI/CD.</p>
+                    <h4 className="font-semibold text-lg mb-2">Get Results Fast</h4>
+                    <p className="text-muted-foreground">We work on one request at a time with full attention and deliver bug fixes, tests, and improvements within 1-3 days. All with proper testing and CI/CD.</p>
                   </div>
                 </div>
               </div>
@@ -127,7 +129,7 @@ const Index = () => {
                   "Unlimited bug fixes & improvements",
                   "Test coverage increased to 80%+",
                   "Complete CI/CD pipeline setup",
-                  "2-5 day turnaround on most tasks",
+                  "1-3 day turnaround on most tasks",
                   "Dedicated Slack channel support",
                   "Pause or cancel anytime"
                 ].map((feature, index) => (
@@ -143,7 +145,7 @@ const Index = () => {
       </section>
 
       {/* Pricing Section */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-muted/30">
+      <section id="pricing" className="py-20 px-4 sm:px-6 lg:px-8 bg-muted/30">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
@@ -172,7 +174,7 @@ const Index = () => {
                     "Basic testing support",
                     "Basic CI/CD pipeline setup",
                     "Email support",
-                    "2-5 day turnaround"
+                    "3-5 day turnaround"
                   ].map((feature, index) => (
                     <div key={index} className="flex items-center gap-3">
                       <Check className="w-4 h-4 text-success flex-shrink-0" />
@@ -264,7 +266,7 @@ const Index = () => {
       </section>
 
       {/* Why Choose Us Section */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8">
+      <section id="why-choose" className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
@@ -306,7 +308,7 @@ const Index = () => {
               </div>
               <h3 className="text-xl font-bold mb-3">Lightning Fast</h3>
               <p className="text-muted-foreground">
-                Most bug fixes and improvements delivered within 2-5 days, not weeks.
+                Most bug fixes and improvements delivered within 1-3 days, not weeks.
               </p>
             </div>
           </div>
@@ -340,7 +342,7 @@ const Index = () => {
       </section>
 
       {/* Footer */}
-      <footer className="py-12 px-4 sm:px-6 lg:px-8 border-t border-border">
+      <footer id="contact" className="py-12 px-4 sm:px-6 lg:px-8 border-t border-border">
         <div className="max-w-7xl mx-auto text-center">
           <div className="mb-8">
             <h3 className="text-3xl font-bold text-foreground mb-2">SemperMade</h3>
