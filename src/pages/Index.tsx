@@ -36,7 +36,7 @@ const Index = () => {
       </section>
 
       {/* Problem Section */}
-      <section className="min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 bg-muted/30">
+      <section id="problems" className="min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 bg-muted/30">
         <div className="max-w-7xl mx-auto w-full">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
@@ -117,7 +117,7 @@ const Index = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold text-lg mb-2">Get Results Fast</h4>
-                    <p className="text-muted-foreground">We work on one request at a time with full attention and deliver bug fixes, tests, and improvements within 1-3 days. All with proper testing and CI/CD.</p>
+                    <p className="text-muted-foreground">We work on one request at a time with full attention and deliver bug fixes, tests, and improvements within 2-5 days. Rush delivery (1-3 days) available for priority requests. All with proper testing and CI/CD.</p>
                   </div>
                 </div>
               </div>
