@@ -379,7 +379,7 @@ const Index = () => {
       </section>
 
       {/* Final CTA Section */}
-      <section className="min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 bg-primary/5">
+      <section id="cta" className="min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 bg-primary/5">
         <div className="max-w-4xl mx-auto text-center w-full">
           <div className="neo-card p-12">
             <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
@@ -404,8 +404,8 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Contact Section */}
-      <section id="contact" className="min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 border-t border-border">
+      {/* Footer */}
+      <footer className="py-12 px-4 sm:px-6 lg:px-8 border-t border-border">
         <div className="max-w-7xl mx-auto text-center">
           <div className="mb-8">
             <h3 className="text-3xl font-bold text-foreground mb-2">SemperMade</h3>
@@ -421,7 +421,7 @@ const Index = () => {
             © 2024 SemperMade. All rights reserved.
           </p>
         </div>
-      </section>
+      </footer>
     </div>
   );
 };

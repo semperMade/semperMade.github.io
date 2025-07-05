@@ -24,7 +24,7 @@ const Navigation = () => {
     { label: "Services", id: "solution" },
     { label: "Pricing", id: "pricing" },
     { label: "Why Semper", id: "why-choose" },
-    { label: "Contact", id: "contact" }
+    { label: "Contact", id: "cta" }
   ];
 
   return (
