@@ -22,7 +22,9 @@ jobs:
         with:
           node-version: 20
       - run: npm ci
+      - run: npm run lint
       - run: npm run build
+      - run: npm test
       - run: cp dist/index.html dist/404.html
       - uses: actions/upload-pages-artifact@v3
         with:
