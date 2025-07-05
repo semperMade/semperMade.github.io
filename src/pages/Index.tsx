@@ -9,7 +9,7 @@ const Index = () => {
     <div className="min-h-screen bg-background">
       <Navigation />
       {/* Hero Section */}
-      <section id="hero" className="relative py-20 px-4 sm:px-6 lg:px-8 pt-32">
+      <section id="hero" className="relative min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 pt-16">
         <div className="max-w-7xl mx-auto text-center">
           <div className="neo-card p-12 mb-12">
             <Badge className="mb-6 neo-raised px-4 py-2 bg-primary/10 text-primary font-semibold">
@@ -36,8 +36,8 @@ const Index = () => {
       </section>
 
       {/* Problem Section */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-muted/30">
-        <div className="max-w-7xl mx-auto">
+      <section className="min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 bg-muted/30">
+        <div className="max-w-7xl mx-auto w-full">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
               The Development Problems That Keep You Up at Night
@@ -76,8 +76,8 @@ const Index = () => {
       </section>
 
       {/* Solution Section */}
-      <section id="solution" className="py-20 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto">
+      <section id="solution" className="min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto w-full">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
               Your Dedicated Development Team
@@ -145,8 +145,8 @@ const Index = () => {
       </section>
 
       {/* Pricing Section */}
-      <section id="pricing" className="py-20 px-4 sm:px-6 lg:px-8 bg-muted/30">
-        <div className="max-w-7xl mx-auto">
+      <section id="pricing" className="min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 bg-muted/30">
+        <div className="max-w-7xl mx-auto w-full">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
               Simple, Transparent Pricing
@@ -266,8 +266,8 @@ const Index = () => {
       </section>
 
       {/* Why Choose Us Section */}
-      <section id="why-choose" className="py-20 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto">
+      <section id="why-choose" className="min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto w-full">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
               Why Companies Choose SemperMade
@@ -316,8 +316,8 @@ const Index = () => {
       </section>
 
       {/* Final CTA Section */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-primary/5">
-        <div className="max-w-4xl mx-auto text-center">
+      <section className="min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 bg-primary/5">
+        <div className="max-w-4xl mx-auto text-center w-full">
           <div className="neo-card p-12">
             <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
               Ready to Stop Worrying About Bugs?
