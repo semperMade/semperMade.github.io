@@ -20,7 +20,7 @@ const Navigation = () => {
 
   const navItems = [
     { label: "About", id: "hero" },
-    { label: "The Problem", id: "problems" },
+    { label: "Problem", id: "problems" },
     { label: "Services", id: "solution" },
     { label: "Pricing", id: "pricing" },
     { label: "Why?", id: "why-choose" },
@@ -51,12 +51,12 @@ const Navigation = () => {
               </button>
             ))}
             <div className="flex items-center gap-2">
-              <Button 
+              {/* <Button 
                 variant="ghost" 
                 size="sm"
               >
                 Login
-              </Button>
+              </Button> */}
               <Button 
                 variant="neo-primary" 
                 size="sm"
@@ -92,12 +92,12 @@ const Navigation = () => {
               </button>
             ))}
             <div className="flex flex-col gap-2 mt-4">
-              <Button 
+              {/* <Button 
                 variant="ghost" 
                 className="w-full"
               >
                 Login
-              </Button>
+              </Button> */}
               <Button 
                 variant="neo-primary" 
                 className="w-full"
