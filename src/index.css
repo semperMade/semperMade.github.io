@@ -2,39 +2,57 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+/* Neo Skeuomorphism Design System for SemperMade
 All colors MUST be HSL.
 */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Base colors with soft, muted tones */
+    --background: 220 15% 97%;
+    --foreground: 220 25% 15%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    /* Card styling with subtle depth */
+    --card: 220 15% 98%;
+    --card-foreground: 220 25% 15%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 220 15% 98%;
+    --popover-foreground: 220 25% 15%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Primary brand colors - deep blue */
+    --primary: 220 85% 35%;
+    --primary-foreground: 220 15% 98%;
+    --primary-hover: 220 85% 30%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Secondary colors - soft gray-blue */
+    --secondary: 220 20% 88%;
+    --secondary-foreground: 220 25% 25%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Muted colors for subtle elements */
+    --muted: 220 15% 92%;
+    --muted-foreground: 220 15% 45%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Accent colors - warm orange for CTAs */
+    --accent: 25 90% 55%;
+    --accent-foreground: 25 15% 98%;
+    --accent-hover: 25 90% 50%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    /* Status colors */
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 220 15% 98%;
+    --success: 140 70% 45%;
+    --success-foreground: 220 15% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    /* Border and input styling */
+    --border: 220 20% 85%;
+    --input: 220 20% 90%;
+    --ring: 220 85% 35%;
+
+    /* Neo skeuomorphism specific variables */
+    --neo-shadow-light: 220 25% 95%;
+    --neo-shadow-dark: 220 25% 80%;
+    --neo-inset-light: 220 15% 99%;
+    --neo-inset-dark: 220 20% 85%;
 
     --radius: 0.5rem;
 
@@ -101,5 +119,28 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+/* Neo Skeuomorphism Utility Classes */
+@layer utilities {
+  .neo-raised {
+    @apply shadow-[6px_6px_12px_hsl(var(--neo-shadow-dark)),-6px_-6px_12px_hsl(var(--neo-shadow-light))];
+  }
+  
+  .neo-pressed {
+    @apply shadow-[inset_4px_4px_8px_hsl(var(--neo-shadow-dark)),inset_-4px_-4px_8px_hsl(var(--neo-shadow-light))];
+  }
+  
+  .neo-card {
+    @apply neo-raised rounded-2xl bg-card border border-border/50;
+  }
+  
+  .neo-button {
+    @apply neo-raised rounded-xl transition-all duration-200 hover:shadow-[8px_8px_16px_hsl(var(--neo-shadow-dark)),-8px_-8px_16px_hsl(var(--neo-shadow-light))] active:neo-pressed;
+  }
+  
+  .neo-input {
+    @apply neo-pressed rounded-xl bg-background border border-border/50 transition-all duration-200 focus:shadow-[inset_2px_2px_4px_hsl(var(--neo-shadow-dark)),inset_-2px_-2px_4px_hsl(var(--neo-shadow-light))];
   }
 }
