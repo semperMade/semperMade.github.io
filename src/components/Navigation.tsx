@@ -20,10 +20,10 @@ const Navigation = () => {
 
   const navItems = [
     { label: "About Semper", id: "hero" },
-    { label: "Problems", id: "problems" },
+    { label: "The Problem", id: "problems" },
     { label: "Services", id: "solution" },
     { label: "Pricing", id: "pricing" },
-    { label: "Why Us", id: "why-choose" },
+    { label: "Why Semper", id: "why-choose" },
     { label: "Contact", id: "contact" }
   ];
 

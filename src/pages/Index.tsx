@@ -71,6 +71,33 @@ const Index = () => {
                 Hiring developers is expensive and slow. Freelancers are hit-or-miss. Agencies charge by the hour.
               </p>
             </Card>
+            <Card className="neo-card p-8 text-center">
+              <div className="w-16 h-16 bg-destructive/10 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                <span className="text-2xl">🔥</span>
+              </div>
+              <h3 className="text-2xl font-bold mb-4">Production Fires</h3>
+              <p className="text-muted-foreground">
+                Critical issues arise at the worst times. You're constantly putting out fires instead of building features.
+              </p>
+            </Card>
+            <Card className="neo-card p-8 text-center">
+              <div className="w-16 h-16 bg-destructive/10 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                <span className="text-2xl">🐌</span>
+              </div>
+              <h3 className="text-2xl font-bold mb-4">Slow Development</h3>
+              <p className="text-muted-foreground">
+                Without proper CI/CD, every release is manual and time-consuming. Simple changes take weeks to deploy.
+              </p>
+            </Card>
+            <Card className="neo-card p-8 text-center">
+              <div className="w-16 h-16 bg-destructive/10 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                <span className="text-2xl">😰</span>
+              </div>
+              <h3 className="text-2xl font-bold mb-4">Technical Debt</h3>
+              <p className="text-muted-foreground">
+                Your codebase is fragile and hard to maintain. Adding new features becomes increasingly difficult and risky.
+              </p>
+            </Card>
           </div>
         </div>
       </section>
@@ -99,7 +126,7 @@ const Index = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold text-lg mb-2">Subscribe & Connect Your Repo</h4>
-                    <p className="text-muted-foreground">Choose your plan and connect your GitHub/GitLab repository. We'll audit your code coverage immediately.</p>
+                    <p className="text-muted-foreground">Choose your plan and connect your GitHub/GitLab repository. We'll audit your code coverage immediately and get your existing code to at least 80% test coverage if it's not already there. We'll also configure GitHub Actions per PR to maintain quality standards before making major changes.</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
@@ -308,7 +335,79 @@ const Index = () => {
               </div>
               <h3 className="text-xl font-bold mb-3">Lightning Fast</h3>
               <p className="text-muted-foreground">
-                Most bug fixes and improvements delivered within 1-3 days, not weeks.
+                Most bug fixes and improvements delivered within 2-5 days, not weeks.
+              </p>
+            </div>
+            <div className="text-center">
+              <div className="neo-card w-20 h-20 mx-auto mb-6 flex items-center justify-center">
+                <span className="text-2xl">🔒</span>
+              </div>
+              <h3 className="text-xl font-bold mb-3">Secure & Private</h3>
+              <p className="text-muted-foreground">
+                Your code never leaves your repository. We work through secure pull requests only.
+              </p>
+            </div>
+            <div className="text-center">
+              <div className="neo-card w-20 h-20 mx-auto mb-6 flex items-center justify-center">
+                <span className="text-2xl">📈</span>
+              </div>
+              <h3 className="text-xl font-bold mb-3">Scalable Solution</h3>
+              <p className="text-muted-foreground">
+                From startups to enterprise, our processes scale with your growing needs.
+              </p>
+            </div>
+            <div className="text-center">
+              <div className="neo-card w-20 h-20 mx-auto mb-6 flex items-center justify-center">
+                <span className="text-2xl">🎯</span>
+              </div>
+              <h3 className="text-xl font-bold mb-3">Focused Approach</h3>
+              <p className="text-muted-foreground">
+                We handle one request at a time to ensure quality and focused attention on each task.
+              </p>
+            </div>
+            <div className="text-center">
+              <div className="neo-card w-20 h-20 mx-auto mb-6 flex items-center justify-center">
+                <span className="text-2xl">🔄</span>
+              </div>
+              <h3 className="text-xl font-bold mb-3">Flexible Plans</h3>
+              <p className="text-muted-foreground">
+                Pause, cancel, or upgrade your subscription anytime. No long-term contracts required.
+              </p>
+            </div>
+            <div className="text-center">
+              <div className="neo-card w-20 h-20 mx-auto mb-6 flex items-center justify-center">
+                <span className="text-2xl">💬</span>
+              </div>
+              <h3 className="text-xl font-bold mb-3">Direct Communication</h3>
+              <p className="text-muted-foreground">
+                Get direct access to your development team through dedicated Slack channels.
+              </p>
+            </div>
+            <div className="text-center">
+              <div className="neo-card w-20 h-20 mx-auto mb-6 flex items-center justify-center">
+                <span className="text-2xl">🛡️</span>
+              </div>
+              <h3 className="text-xl font-bold mb-3">Risk-Free</h3>
+              <p className="text-muted-foreground">
+                30-day money-back guarantee. If you're not satisfied, we'll refund your first month.
+              </p>
+            </div>
+            <div className="text-center">
+              <div className="neo-card w-20 h-20 mx-auto mb-6 flex items-center justify-center">
+                <span className="text-2xl">📊</span>
+              </div>
+              <h3 className="text-xl font-bold mb-3">Transparent Progress</h3>
+              <p className="text-muted-foreground">
+                Track every request with detailed progress updates and clear completion timelines.
+              </p>
+            </div>
+            <div className="text-center">
+              <div className="neo-card w-20 h-20 mx-auto mb-6 flex items-center justify-center">
+                <span className="text-2xl">🚀</span>
+              </div>
+              <h3 className="text-xl font-bold mb-3">Modern Stack</h3>
+              <p className="text-muted-foreground">
+                We work with the latest technologies and best practices in software development.
               </p>
             </div>
           </div>
