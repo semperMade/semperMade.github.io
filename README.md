@@ -62,7 +62,15 @@ This project is built with:
 
 ## How can I deploy this project?
 
-Simply open [Lovable](https://lovable.dev/projects/d2ccd8b4-eb2e-47cc-a64e-4f9675da6ef2) and click on Share -> Publish.
+The project can be built as a static site using **Vite**. Run:
+
+```sh
+npm run build
+```
+
+This outputs the compiled files to the `dist` folder. A GitHub Actions
+workflow is included to automatically deploy the contents of `dist` to
+**GitHub Pages** whenever changes are pushed to the `main` branch.
 
 ## Can I connect a custom domain to my Lovable project?
 
