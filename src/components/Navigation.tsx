@@ -19,11 +19,11 @@ const Navigation = () => {
   };
 
   const navItems = [
-    { label: "About Semper", id: "hero" },
+    { label: "About", id: "hero" },
     { label: "The Problem", id: "problems" },
     { label: "Services", id: "solution" },
     { label: "Pricing", id: "pricing" },
-    { label: "Why Semper", id: "why-choose" },
+    { label: "Why?", id: "why-choose" },
     { label: "Contact", id: "cta" }
   ];
 
@@ -50,13 +50,21 @@ const Navigation = () => {
                 {item.label}
               </button>
             ))}
-            <Button 
-              variant="neo-primary" 
-              size="sm"
-              onClick={() => scrollToSection('pricing')}
-            >
-              Get Started
-            </Button>
+            <div className="flex items-center gap-2">
+              <Button 
+                variant="ghost" 
+                size="sm"
+              >
+                Login
+              </Button>
+              <Button 
+                variant="neo-primary" 
+                size="sm"
+                onClick={() => scrollToSection('pricing')}
+              >
+                Get Started
+              </Button>
+            </div>
           </div>
 
           {/* Mobile Menu Button */}
@@ -83,13 +91,21 @@ const Navigation = () => {
                 {item.label}
               </button>
             ))}
-            <Button 
-              variant="neo-primary" 
-              className="w-full mt-4"
-              onClick={() => scrollToSection('pricing')}
-            >
-              Get Started
-            </Button>
+            <div className="flex flex-col gap-2 mt-4">
+              <Button 
+                variant="ghost" 
+                className="w-full"
+              >
+                Login
+              </Button>
+              <Button 
+                variant="neo-primary" 
+                className="w-full"
+                onClick={() => scrollToSection('pricing')}
+              >
+                Get Started
+              </Button>
+            </div>
           </div>
         )}
       </div>

@@ -24,10 +24,10 @@ const Index = () => {
               Pause anytime. No contracts. No surprises.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <Button variant="neo-accent" size="xl" className="px-12">
+              <Button variant="neo-accent" size="xl" className="px-8 sm:px-12">
                 Get Started Today
               </Button>
-              <Button variant="neo" size="xl" className="px-12">
+              <Button variant="neo" size="xl" className="px-8 sm:px-12">
                 View Pricing Plans
               </Button>
             </div>
@@ -285,7 +285,7 @@ const Index = () => {
             <p className="text-muted-foreground mb-6">
               All plans include unlimited revisions, pause anytime, and no setup fees.
             </p>
-            <Button variant="outline" size="lg">
+            <Button variant="outline" size="lg" className="px-6 sm:px-8">
               Compare All Features
             </Button>
           </div>
@@ -297,7 +297,7 @@ const Index = () => {
         <div className="max-w-7xl mx-auto w-full">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-              Why Companies Choose SemperMade
+              Why?
             </h2>
           </div>
 
@@ -390,15 +390,15 @@ const Index = () => {
               Start your subscription today and get your first bug fix within 48 hours.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <Button variant="neo-accent" size="xl" className="px-12">
+              <Button variant="neo-accent" size="xl" className="px-8 sm:px-12">
                 Start Your Subscription
               </Button>
-              <Button variant="neo" size="xl" className="px-12">
+              <Button variant="neo" size="xl" className="px-8 sm:px-12">
                 Book a Demo Call
               </Button>
             </div>
             <p className="text-sm text-muted-foreground mt-6">
-              No contracts • Cancel anytime • 30-day money-back guarantee
+              No contracts • Cancel anytime
             </p>
           </div>
         </div>
