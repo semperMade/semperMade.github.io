@@ -190,7 +190,7 @@ const Index = () => {
               <CardHeader className="text-center pb-8">
                 <CardTitle className="text-2xl font-bold mb-2">Essential</CardTitle>
                 <div className="text-4xl font-bold text-foreground mb-2">
-                  $4,995<span className="text-lg font-normal text-muted-foreground">/month</span>
+                  $3,995<span className="text-lg font-normal text-muted-foreground">/month</span>
                 </div>
                 <p className="text-muted-foreground">Perfect for startups with stable apps</p>
               </CardHeader>
@@ -201,7 +201,7 @@ const Index = () => {
                     "Basic testing support",
                     "Basic CI/CD pipeline setup",
                     "Email support",
-                    "3-5 day turnaround"
+                    "2-5 day turnaround"
                   ].map((feature, index) => (
                     <div key={index} className="flex items-center gap-3">
                       <Check className="w-4 h-4 text-success flex-shrink-0" />
@@ -374,42 +374,6 @@ const Index = () => {
                 Pause, cancel, or upgrade your subscription anytime. No long-term contracts required.
               </p>
             </div>
-            <div className="text-center">
-              <div className="neo-card w-20 h-20 mx-auto mb-6 flex items-center justify-center">
-                <span className="text-2xl">💬</span>
-              </div>
-              <h3 className="text-xl font-bold mb-3">Direct Communication</h3>
-              <p className="text-muted-foreground">
-                Get direct access to your development team through dedicated Slack channels.
-              </p>
-            </div>
-            <div className="text-center">
-              <div className="neo-card w-20 h-20 mx-auto mb-6 flex items-center justify-center">
-                <span className="text-2xl">🛡️</span>
-              </div>
-              <h3 className="text-xl font-bold mb-3">Risk-Free</h3>
-              <p className="text-muted-foreground">
-                30-day money-back guarantee. If you're not satisfied, we'll refund your first month.
-              </p>
-            </div>
-            <div className="text-center">
-              <div className="neo-card w-20 h-20 mx-auto mb-6 flex items-center justify-center">
-                <span className="text-2xl">📊</span>
-              </div>
-              <h3 className="text-xl font-bold mb-3">Transparent Progress</h3>
-              <p className="text-muted-foreground">
-                Track every request with detailed progress updates and clear completion timelines.
-              </p>
-            </div>
-            <div className="text-center">
-              <div className="neo-card w-20 h-20 mx-auto mb-6 flex items-center justify-center">
-                <span className="text-2xl">🚀</span>
-              </div>
-              <h3 className="text-xl font-bold mb-3">Modern Stack</h3>
-              <p className="text-muted-foreground">
-                We work with the latest technologies and best practices in software development.
-              </p>
-            </div>
           </div>
         </div>
       </section>
@@ -440,8 +404,8 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer id="contact" className="py-12 px-4 sm:px-6 lg:px-8 border-t border-border">
+      {/* Contact Section */}
+      <section id="contact" className="min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 border-t border-border">
         <div className="max-w-7xl mx-auto text-center">
           <div className="mb-8">
             <h3 className="text-3xl font-bold text-foreground mb-2">SemperMade</h3>
@@ -457,7 +421,7 @@ const Index = () => {
             © 2024 SemperMade. All rights reserved.
           </p>
         </div>
-      </footer>
+      </section>
     </div>
   );
 };
