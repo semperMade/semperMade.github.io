@@ -9,13 +9,13 @@ const Index = () => {
     <div className="min-h-screen bg-background">
       <Navigation />
       {/* Hero Section */}
-      <section id="hero" className="relative min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 pt-16">
+      <section id="hero" className="relative min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 pt-24 pb-16">
         <div className="max-w-7xl mx-auto text-center">
-          <div className="neo-card p-12 mb-12">
+          <div className="neo-card p-16 mb-12">
             <Badge className="mb-6 neo-raised px-4 py-2 bg-primary/10 text-primary font-semibold">
               Unlimited Development • Fixed Monthly Price
             </Badge>
-            <h1 className="text-5xl md:text-7xl font-bold text-foreground mb-6 leading-tight">
+            <h1 className="neo-header text-5xl md:text-7xl mb-6 leading-tight">
               Stop Worrying About
               <span className="block text-primary">Bugs & Broken Code</span>
             </h1>
@@ -39,7 +39,7 @@ const Index = () => {
       <section id="problems" className="min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 bg-muted/30">
         <div className="max-w-7xl mx-auto w-full">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
+            <h2 className="neo-header text-4xl md:text-5xl mb-6">
               The Development Problems That Keep You Up at Night
             </h2>
           </div>
@@ -106,7 +106,7 @@ const Index = () => {
       <section id="solution" className="min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto w-full">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
+            <h2 className="neo-header text-4xl md:text-5xl mb-6">
               Your Dedicated Development Team
               <span className="block text-primary">For One Fixed Price</span>
             </h2>
@@ -175,7 +175,7 @@ const Index = () => {
       <section id="pricing" className="min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 bg-muted/30">
         <div className="max-w-7xl mx-auto w-full">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
+            <h2 className="neo-header text-4xl md:text-5xl mb-6">
               Simple, Transparent Pricing
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
@@ -296,7 +296,7 @@ const Index = () => {
       <section id="why-choose" className="min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto w-full">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
+            <h2 className="neo-header text-4xl md:text-5xl mb-6">
               Why Choose SemperMade?
               <span className="block text-primary">Your Trusted Development Partner</span>
             </h2>
@@ -382,8 +382,8 @@ const Index = () => {
       {/* Final CTA Section */}
       <section id="cta" className="min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 bg-primary/5">
         <div className="max-w-4xl mx-auto text-center w-full">
-          <div className="neo-card p-12">
-            <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
+          <div className="neo-card p-16">
+            <h2 className="neo-header text-4xl md:text-5xl mb-6">
               Ready to Stop Worrying About Bugs?
             </h2>
             <p className="text-xl text-muted-foreground mb-10 max-w-2xl mx-auto">

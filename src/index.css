@@ -123,6 +123,10 @@ All colors MUST be HSL.
     @apply bg-background text-foreground;
     font-family: 'Quicksand', sans-serif;
   }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold font-sans leading-tight;
+  }
 }
 
 /* Neo Skeuomorphism Utility Classes */
@@ -145,5 +149,14 @@ All colors MUST be HSL.
   
   .neo-input {
     @apply neo-pressed rounded-xl bg-background border border-border/50 transition-all duration-200 focus:shadow-[inset_2px_2px_4px_hsl(var(--neo-shadow-dark)),inset_-2px_-2px_4px_hsl(var(--neo-shadow-light))];
+  }
+
+  /* Additional neumorphic utilities for layout elements */
+  .neo-nav {
+    @apply neo-raised bg-card/95 backdrop-blur-md border-b border-border;
+  }
+
+  .neo-header {
+    @apply neo-pressed rounded-3xl px-6 py-4 md:px-8 md:py-6 bg-card text-foreground;
   }
 }
