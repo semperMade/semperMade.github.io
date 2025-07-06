@@ -1,4 +1,4 @@
-# SemperMade Project
+# semperMade Project
 
 ## How can I edit this code?
 
