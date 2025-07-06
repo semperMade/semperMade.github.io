@@ -409,8 +409,14 @@ const Index = () => {
               <Button asChild variant="neo-accent" size="xl" className="px-8 sm:px-12">
                 <Link to="/#pricing">Start Your Subscription</Link>
               </Button>
-              <Button variant="neo" size="xl" className="px-8 sm:px-12">
-                Book a Demo Call
+              <Button asChild variant="neo" size="xl" className="px-8 sm:px-12">
+                <a
+                  href="https://zcal.co/bastosmichael/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Book a Demo Call
+                </a>
               </Button>
             </div>
             <p className="text-sm text-muted-foreground mt-6">
