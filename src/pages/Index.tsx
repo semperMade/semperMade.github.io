@@ -386,7 +386,7 @@ const Index = () => {
               Ready to Stop Worrying About Bugs?
             </h2>
             <p className="text-xl text-muted-foreground mb-10 max-w-2xl mx-auto">
-              Join hundreds of companies who've made their applications bulletproof with SemperMade. 
+              Join all of the companies who've made their applications bulletproof with SemperMade. 
               Start your subscription today and get your first bug fix within 48 hours.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
