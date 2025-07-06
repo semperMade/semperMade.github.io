@@ -20,7 +20,7 @@ const Index = () => {
               <span className="block text-primary">Bugs & Broken Code</span>
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground mb-10 max-w-4xl mx-auto leading-relaxed">
-              SemperMade provides unlimited bug fixes, CI/CD setup, and test coverage improvement for one flat monthly fee. 
+              semperMade provides unlimited bug fixes, CI/CD setup, and test coverage improvement for one flat monthly fee. 
               Pause anytime. No contracts. No surprises.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -111,7 +111,7 @@ const Index = () => {
               <span className="block text-primary">For One Fixed Price</span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              SemperMade works like a monthly subscription to Netflix, but for software development. 
+              semperMade works like a monthly subscription to Netflix, but for software development. 
               Get unlimited bug fixes, testing, and CI/CD improvements.
             </p>
           </div>
@@ -297,7 +297,7 @@ const Index = () => {
         <div className="max-w-7xl mx-auto w-full">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-              Why Choose SemperMade?
+              Why Choose semperMade?
             </h2>
           </div>
 
@@ -386,7 +386,7 @@ const Index = () => {
               Ready to Stop Worrying About Bugs?
             </h2>
             <p className="text-xl text-muted-foreground mb-10 max-w-2xl mx-auto">
-              Join all of the companies who've made their applications bulletproof with SemperMade. 
+              Join all of the companies who've made their applications bulletproof with semperMade. 
               Start your subscription today and get your first bug fix within 48 hours.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -408,7 +408,7 @@ const Index = () => {
       <footer className="py-12 px-4 sm:px-6 lg:px-8 border-t border-border">
         <div className="max-w-7xl mx-auto text-center">
           <div className="mb-8">
-            <h3 className="text-3xl font-bold text-foreground mb-2">SemperMade</h3>
+            <h3 className="text-3xl font-bold text-foreground mb-2">semperMade</h3>
             <p className="text-muted-foreground">Unlimited development services for a flat monthly fee</p>
           </div>
           <div className="flex flex-wrap justify-center gap-8 text-sm text-muted-foreground">
@@ -418,7 +418,7 @@ const Index = () => {
             <a href="#" className="hover:text-primary transition-colors">Support</a>
           </div>
           <p className="text-sm text-muted-foreground mt-8">
-            © 2024 SemperMade. All rights reserved.
+            © 2024 semperMade. All rights reserved.
           </p>
         </div>
       </footer>

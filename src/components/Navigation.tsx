@@ -36,7 +36,7 @@ const Navigation = () => {
             className="cursor-pointer" 
             onClick={() => scrollToSection('hero')}
           >
-            <h1 className="text-2xl font-bold text-primary">SemperMade</h1>
+            <h1 className="text-2xl font-bold text-primary">semperMade</h1>
           </div>
 
           {/* Desktop Navigation */}
