@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -119,6 +121,11 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
+    font-family: 'Quicksand', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold font-sans leading-tight;
   }
 }
 
@@ -133,7 +140,7 @@ All colors MUST be HSL.
   }
   
   .neo-card {
-    @apply neo-raised rounded-2xl bg-card border border-border/50;
+    @apply neo-pressed rounded-2xl bg-card border border-border/50;
   }
   
   .neo-button {
@@ -142,5 +149,10 @@ All colors MUST be HSL.
   
   .neo-input {
     @apply neo-pressed rounded-xl bg-background border border-border/50 transition-all duration-200 focus:shadow-[inset_2px_2px_4px_hsl(var(--neo-shadow-dark)),inset_-2px_-2px_4px_hsl(var(--neo-shadow-light))];
+  }
+
+  /* Additional neumorphic utilities for layout elements */
+  .neo-nav {
+    @apply neo-pressed bg-card/95 backdrop-blur-md border-b border-border;
   }
 }

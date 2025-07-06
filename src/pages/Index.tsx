@@ -9,9 +9,9 @@ const Index = () => {
     <div className="min-h-screen bg-background">
       <Navigation />
       {/* Hero Section */}
-      <section id="hero" className="relative min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 pt-16">
+      <section id="hero" className="relative min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 pt-24 pb-16">
         <div className="max-w-7xl mx-auto text-center">
-          <div className="neo-card p-12 mb-12">
+          <div className="neo-card p-16 mb-12">
             <Badge className="mb-6 neo-raised px-4 py-2 bg-primary/10 text-primary font-semibold">
               Unlimited Development • Fixed Monthly Price
             </Badge>
@@ -381,7 +381,7 @@ const Index = () => {
       {/* Final CTA Section */}
       <section id="cta" className="min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 bg-primary/5">
         <div className="max-w-4xl mx-auto text-center w-full">
-          <div className="neo-card p-12">
+          <div className="neo-card p-16">
             <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
               Ready to Stop Worrying About Bugs?
             </h2>
