@@ -40,11 +40,11 @@ const Index = () => {
               Pause anytime. No contracts. No surprises.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <Button variant="neo-accent" size="xl" className="px-8 sm:px-12">
-                Get Started Today
+              <Button asChild variant="neo-accent" size="xl" className="px-8 sm:px-12">
+                <Link to="/#pricing">Get Started Today</Link>
               </Button>
-              <Button variant="neo" size="xl" className="px-8 sm:px-12">
-                View Pricing Plans
+              <Button asChild variant="neo" size="xl" className="px-8 sm:px-12">
+                <Link to="/#pricing">View Pricing Plans</Link>
               </Button>
             </div>
           </div>
@@ -406,8 +406,8 @@ const Index = () => {
               Start your subscription today and get your first bug fix within 48 hours.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <Button variant="neo-accent" size="xl" className="px-8 sm:px-12">
-                Start Your Subscription
+              <Button asChild variant="neo-accent" size="xl" className="px-8 sm:px-12">
+                <Link to="/#pricing">Start Your Subscription</Link>
               </Button>
               <Button variant="neo" size="xl" className="px-8 sm:px-12">
                 Book a Demo Call
