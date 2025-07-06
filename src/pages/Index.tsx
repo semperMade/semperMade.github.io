@@ -3,8 +3,24 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Check, CircleDollarSign, Users, FileText } from "lucide-react";
 import Navigation from "@/components/Navigation";
+import { Link, useLocation } from "react-router-dom";
+import { useEffect } from "react";
 
 const Index = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash) {
+      const id = location.hash.replace('#', '');
+      const element = document.getElementById(id);
+      if (element) {
+        const navHeight = 64;
+        const elementPosition = element.offsetTop - navHeight;
+        window.scrollTo({ top: elementPosition, behavior: 'smooth' });
+      }
+    }
+  }, [location]);
+
   return (
     <div className="min-h-screen bg-background">
       <Navigation />
@@ -24,11 +40,11 @@ const Index = () => {
               Pause anytime. No contracts. No surprises.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <Button variant="neo-accent" size="xl" className="px-8 sm:px-12">
-                Get Started Today
+              <Button asChild variant="neo-accent" size="xl" className="px-8 sm:px-12">
+                <Link to="/#pricing">Get Started Today</Link>
               </Button>
-              <Button variant="neo" size="xl" className="px-8 sm:px-12">
-                View Pricing Plans
+              <Button asChild variant="neo" size="xl" className="px-8 sm:px-12">
+                <Link to="/#pricing">View Pricing Plans</Link>
               </Button>
             </div>
           </div>
@@ -390,11 +406,17 @@ const Index = () => {
               Start your subscription today and get your first bug fix within 48 hours.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <Button variant="neo-accent" size="xl" className="px-8 sm:px-12">
-                Start Your Subscription
+              <Button asChild variant="neo-accent" size="xl" className="px-8 sm:px-12">
+                <Link to="/#pricing">Start Your Subscription</Link>
               </Button>
-              <Button variant="neo" size="xl" className="px-8 sm:px-12">
-                Book a Demo Call
+              <Button asChild variant="neo" size="xl" className="px-8 sm:px-12">
+                <a
+                  href="https://zcal.co/bastosmichael/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Book a Demo Call
+                </a>
               </Button>
             </div>
             <p className="text-sm text-muted-foreground mt-6">
@@ -412,10 +434,10 @@ const Index = () => {
             <p className="text-muted-foreground">Unlimited development services for a flat monthly fee</p>
           </div>
           <div className="flex flex-wrap justify-center gap-8 text-sm text-muted-foreground">
-            <a href="#" className="hover:text-primary transition-colors">Terms of Service</a>
-            <a href="#" className="hover:text-primary transition-colors">Privacy Policy</a>
-            <a href="#" className="hover:text-primary transition-colors">Contact</a>
-            <a href="#" className="hover:text-primary transition-colors">Support</a>
+            <Link to="/terms" className="hover:text-primary transition-colors">Terms of Service</Link>
+            <Link to="/privacy" className="hover:text-primary transition-colors">Privacy Policy</Link>
+            <Link to="/#cta" className="hover:text-primary transition-colors">Contact</Link>
+            <a href="mailto:support@sempermade.com" className="hover:text-primary transition-colors">Support</a>
           </div>
           <p className="text-sm text-muted-foreground mt-8">
             © 2024 semperMade. All rights reserved.
