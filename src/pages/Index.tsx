@@ -298,7 +298,6 @@ const Index = () => {
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
               Why Choose SemperMade?
-              <span className="block text-primary">Your Trusted Development Partner</span>
             </h2>
           </div>
 

@@ -144,7 +144,7 @@ All colors MUST be HSL.
   }
   
   .neo-button {
-    @apply neo-pressed rounded-xl transition-all duration-200 hover:shadow-[8px_8px_16px_hsl(var(--neo-shadow-dark)),-8px_-8px_16px_hsl(var(--neo-shadow-light))] active:neo-pressed;
+    @apply neo-raised rounded-xl transition-all duration-200 hover:shadow-[8px_8px_16px_hsl(var(--neo-shadow-dark)),-8px_-8px_16px_hsl(var(--neo-shadow-light))] active:neo-pressed;
   }
   
   .neo-input {
