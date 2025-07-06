@@ -3,8 +3,24 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Check, CircleDollarSign, Users, FileText } from "lucide-react";
 import Navigation from "@/components/Navigation";
+import { Link, useLocation } from "react-router-dom";
+import { useEffect } from "react";
 
 const Index = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash) {
+      const id = location.hash.replace('#', '');
+      const element = document.getElementById(id);
+      if (element) {
+        const navHeight = 64;
+        const elementPosition = element.offsetTop - navHeight;
+        window.scrollTo({ top: elementPosition, behavior: 'smooth' });
+      }
+    }
+  }, [location]);
+
   return (
     <div className="min-h-screen bg-background">
       <Navigation />
@@ -412,8 +428,8 @@ const Index = () => {
             <p className="text-muted-foreground">Unlimited development services for a flat monthly fee</p>
           </div>
           <div className="flex flex-wrap justify-center gap-8 text-sm text-muted-foreground">
-            <a href="#" className="hover:text-primary transition-colors">Terms of Service</a>
-            <a href="#" className="hover:text-primary transition-colors">Privacy Policy</a>
+            <Link to="/terms" className="hover:text-primary transition-colors">Terms of Service</Link>
+            <Link to="/privacy" className="hover:text-primary transition-colors">Privacy Policy</Link>
             <a href="#" className="hover:text-primary transition-colors">Contact</a>
             <a href="#" className="hover:text-primary transition-colors">Support</a>
           </div>
