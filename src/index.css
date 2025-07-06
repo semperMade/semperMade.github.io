@@ -140,11 +140,11 @@ All colors MUST be HSL.
   }
   
   .neo-card {
-    @apply neo-raised rounded-2xl bg-card border border-border/50;
+    @apply neo-pressed rounded-2xl bg-card border border-border/50;
   }
   
   .neo-button {
-    @apply neo-raised rounded-xl transition-all duration-200 hover:shadow-[8px_8px_16px_hsl(var(--neo-shadow-dark)),-8px_-8px_16px_hsl(var(--neo-shadow-light))] active:neo-pressed;
+    @apply neo-pressed rounded-xl transition-all duration-200 hover:shadow-[8px_8px_16px_hsl(var(--neo-shadow-dark)),-8px_-8px_16px_hsl(var(--neo-shadow-light))] active:neo-pressed;
   }
   
   .neo-input {
@@ -153,10 +153,6 @@ All colors MUST be HSL.
 
   /* Additional neumorphic utilities for layout elements */
   .neo-nav {
-    @apply neo-raised bg-card/95 backdrop-blur-md border-b border-border;
-  }
-
-  .neo-header {
-    @apply neo-pressed rounded-3xl px-6 py-4 md:px-8 md:py-6 bg-card text-foreground;
+    @apply neo-pressed bg-card/95 backdrop-blur-md border-b border-border;
   }
 }
