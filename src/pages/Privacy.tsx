@@ -23,6 +23,21 @@ const Privacy = () => (
         <p>If you have questions about this Privacy Policy, please email support@sempermade.com.</p>
       </div>
     </section>
+    <footer className="py-12 px-4 sm:px-6 lg:px-8 border-t border-border">
+      <div className="max-w-7xl mx-auto text-center">
+        <div className="mb-8">
+          <h3 className="text-3xl font-bold text-foreground mb-2">semperMade</h3>
+          <p className="text-muted-foreground">Unlimited development services for a flat monthly fee</p>
+        </div>
+        <div className="flex flex-wrap justify-center gap-8 text-sm text-muted-foreground">
+          <a href="/terms" className="hover:text-primary transition-colors">Terms of Service</a>
+          <a href="/privacy" className="hover:text-primary transition-colors">Privacy Policy</a>
+          <a href="/#cta" className="hover:text-primary transition-colors">Contact</a>
+          <a href="mailto:support@sempermade.com" className="hover:text-primary transition-colors">Support</a>
+        </div>
+        <p className="text-sm text-muted-foreground mt-8">© 2024 semperMade. All rights reserved.</p>
+      </div>
+    </footer>
   </div>
 );
 

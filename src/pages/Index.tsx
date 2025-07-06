@@ -430,8 +430,8 @@ const Index = () => {
           <div className="flex flex-wrap justify-center gap-8 text-sm text-muted-foreground">
             <Link to="/terms" className="hover:text-primary transition-colors">Terms of Service</Link>
             <Link to="/privacy" className="hover:text-primary transition-colors">Privacy Policy</Link>
-            <a href="#" className="hover:text-primary transition-colors">Contact</a>
-            <a href="#" className="hover:text-primary transition-colors">Support</a>
+            <Link to="/#cta" className="hover:text-primary transition-colors">Contact</Link>
+            <a href="mailto:support@sempermade.com" className="hover:text-primary transition-colors">Support</a>
           </div>
           <p className="text-sm text-muted-foreground mt-8">
             © 2024 semperMade. All rights reserved.
